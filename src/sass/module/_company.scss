@@ -15,9 +15,18 @@
     }
 }
 
-.company__title{
+.company__title {
     text-align: center;
     text-transform: uppercase;
+    background-image: url('../images/common/company-cloud.png');
+    background-position: center rem(50); 
+    background-repeat: no-repeat;
+    background-size: rem(409) rem(184);
+    padding: rem(50) 0;
+    @include mq(md) {
+        background-position: rem(220) rem(0); 
+        background-size: rem(708) rem(320);
+    }
 }
 
 

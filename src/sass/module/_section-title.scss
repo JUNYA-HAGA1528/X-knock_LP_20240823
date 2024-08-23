@@ -21,3 +21,32 @@
         font-size: rem(48);
     }
 }
+
+.section-title__wrapper img {
+    width: rem(356);
+    height: rem(71);
+    margin:auto ;
+    @include mq(md) {
+       width:rem(581);
+       height: rem(116);
+       margin: rem(12) auto auto auto ;
+    }
+}
+
+.section-title__content{
+    position: relative;
+}
+
+.section-title__img{
+    position: absolute;
+    top: rem(-40);
+    left: rem(15);
+    width:rem(70);
+    height: rem(70);
+    @include mq(md) {
+        top: rem(-50);
+        left: rem(170);    
+       width: rem(145);
+       height: rem(145);
+    }
+}
