@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.section-title{
+    color: $blue;
+}
+
+.section-title__en {
+    font-family: $second-font-family;
+    font-size: rem(16);
+    font-weight: bold; /* 太字にする */
+    font-style: italic; /* イタリック体にする */
+}
+
+.section-title__jp{
+    margin-top: rem(10);
+    font-size: rem(32);
+    font-weight: $bold;
+    letter-spacing: 0.04em;
+    @include mq(md) {
+        margin-top: rem(20);
+        font-size: rem(48);
+    }
+}

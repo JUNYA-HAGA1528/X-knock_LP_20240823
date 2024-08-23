@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.company{
+    background-color: #D7EFF7;
+}
+
+.company__inner{
+    max-width: rem(390);
+    margin: auto;
+    padding: 0 rem(13);
+    text-align: center;
+    @include mq(md){
+        max-width: rem(1224);
+        padding: 0 rem(25);
+    }
+}
+
+.company__title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.company__list{
+    margin-top: rem(20);
+    @include mq(md){
+        margin-top: rem(66);
+    }
+}

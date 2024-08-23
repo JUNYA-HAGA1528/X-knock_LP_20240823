@@ -1,0 +1,61 @@
+@use "global" as *;
+
+
+.company-card {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.company-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.company-card__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: rem(20);
+    box-sizing: border-box;
+}
+
+.company-card__dt{
+    color: $blue;
+    font-size: rem(18);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+}
+
+.company-card__dt {
+    margin-top: rem(11);
+}
+
+.company-card__name .company-card__dt {
+    margin-top: 0;
+}
+
+
+.company-card__dd{
+    margin-top: rem(4);
+    color: $black;
+    font-size: rem(16);
+    font-weight: $medium;
+    letter-spacing: 0.01em;
+}
+
+.company-card__dd--font{
+    font-size: rem(14);
+}
+
+.company-card__text {
+    margin-top: rem(4);
+    text-decoration: underline;
+}
+
+
+.company-card__url a:hover {
+    text-decoration: underline;
+}
