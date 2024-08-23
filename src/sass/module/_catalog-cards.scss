@@ -1,0 +1,40 @@
+@use 'global' as *;
+
+.catalog-cards{
+    @include mq(md){
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.catalog-cards__item{
+    background-color: $white;
+    border: solid 1px $black ;
+    @include mq(md){
+        max-width: calc(33.3333% - 5rem * 2 / 3 );
+        width: 100%;
+    }
+}
+
+.catalog-cards__item + .catalog-cards__item{
+    margin-top: rem(40);
+    @include mq(md){
+        margin-top: 0;
+        margin-left: rem(80);
+    }
+}
+
+
+/* 枚数が増えたときのための処理 */
+.catalog-cards__item:nth-child(3n + 1){
+    @include mq(md){
+        margin-left: 0;
+    }
+}
+
+/* 枚数が増えたときのための処理 */
+.catalog-cards__item:nth-child(n + 4){
+    @include mq(md){
+        margin-top: rem(40);
+    }
+}
