@@ -16,14 +16,17 @@
 }
 
 .company__title {
+    max-width: rem(420);
+    margin: auto;
     text-align: center;
     text-transform: uppercase;
     background-image: url('../images/common/company-cloud.png');
-    background-position: center rem(50); 
+    background-position: center rem(30); 
     background-repeat: no-repeat;
     background-size: rem(409) rem(184);
     padding: rem(50) 0;
     @include mq(md) {
+        max-width: rem(1174);
         background-position: rem(220) rem(0); 
         background-size: rem(708) rem(320);
     }
@@ -33,6 +36,6 @@
 .company__list{
     margin-top: rem(20);
     @include mq(md){
-        margin-top: rem(66);
+        margin-top: rem(50);
     }
 }
