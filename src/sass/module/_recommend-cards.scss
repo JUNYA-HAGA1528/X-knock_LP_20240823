@@ -1,0 +1,25 @@
+@use 'global' as *;
+
+.recommend-cards{
+    color: $white;
+    @include mq(md){
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.recommend-cards__item{
+    @include mq(md){
+        max-width: calc(50% - 6.0625rem * 1 / 2 );
+        width: 100%;
+    }
+}
+
+.recommend-cards__item + .recommend-cards__item{
+    margin-top: rem(40);
+    @include mq(md){
+        margin-top: 0;
+        margin-left: rem(97);
+    }
+}
+

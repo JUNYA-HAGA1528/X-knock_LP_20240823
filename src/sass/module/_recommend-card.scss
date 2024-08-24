@@ -1,0 +1,235 @@
+@use 'global' as *;
+
+.recommend-card{
+    position: relative;
+}
+
+.recommend-card__content{
+    background-image: url('../images/common/recommend-card-bg1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: rem(57) rem(20) rem(68);
+
+}
+
+.recommend-card__name{
+    position: absolute;
+    top: -4%;
+    left: -7%;
+    width: 113.5%;
+}
+
+.recommend-card__name img {
+    width: 113.5%;
+    height: rem(125);
+}
+
+.recommend-card__title{
+    font-size: rem(20);
+    font-weight: $bold;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    @include mq(md) {
+       font-size: rem(32);
+    }
+}
+
+.recommend-card__img{
+    width:rem(422) ;
+    height: rem(284);
+    margin: rem(40) auto auto auto;
+}
+
+.recommend-card__img img {
+    aspect-ratio: 422/284;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recommend-card__source{
+    margin-top: rem(15);
+    display: flex;
+    justify-content: center;
+    font-size: rem(8.6); 
+    font-weight: $regular;
+    @include mq(md) {
+        font-size: rem(14); 
+    }
+}
+
+.recommend-card__source-text{
+    text-decoration: underline;
+}
+
+.recommend-card__source-text a:hover{
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+
+.recommend-card__strengths-img{
+    width: rem(341);
+    height: rem(76);
+    margin: rem(40) auto auto auto;
+}
+
+.recommend-card__strengths-list {
+    background-color: #ffffff;
+    border-radius: rem(4);
+    margin-top: rem(-6);
+    padding: rem(12) rem(35) rem(14);
+}
+
+.recommend-card__strengths-item {
+    font-size: rem(20);
+    font-weight: $semiBold;
+    color: $green;
+    text-align: center;
+    border-bottom: 1px dashed $green;
+    padding: rem(15) 0;
+}
+
+.recommend-card__strengths-item:last-child {
+    border-bottom: none;
+}
+
+.recommend-card__service-img{
+    width: rem(341);
+    height: rem(76);
+    margin: rem(48) auto auto auto;
+    @include mq(md) {
+        margin: rem(80) auto auto auto;
+    }
+}
+
+.recommend-card__wrapper{
+    margin-top: rem(23);
+    display: flex;
+    gap: 0 rem(6);
+    @include mq(md) {
+       margin-top:rem(40) ;
+    }
+}
+
+.recommend-card__inspection-text{
+    color: $green;
+    font-size: rem(14);
+    font-weight: $semiBold;
+    line-height: 1.75;
+    background-color: $white;
+    width: 81.6%;
+    margin: rem(-16) auto auto auto;
+    padding: rem(40) 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*ボタン*/
+.company-card__buttons {
+    margin-top: rem(48); /* 追加 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company-card__button + .company-card__button{
+    margin-top: rem(20);
+}
+
+.company-card__button {
+    background: $green;
+    border: solid 1px $green ;
+    position: relative;
+    color: $white;
+    font-size: rem(16);
+    font-weight: $bold;
+    width: 100%;
+    padding: rem(12) 0;
+    z-index: 1;
+    transition: 0.4s;
+    overflow: hidden;
+    @include mq(md){
+        padding: rem(35.5) 0;
+        font-size: rem(30.93);
+        font-weight: $bold;
+        letter-spacing: 0.03em;
+    }
+}
+
+// .company-card__button::before {
+//     content: "";
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     z-index: -1;
+//     background-color: #fff;
+//     transform-origin: 100% 50%;
+//     transform: scaleX(0);
+//     transition: transform ease 0.4s;
+// }
+
+// .company-card__button::after{
+//     border-radius: rem(0);
+//     transition: all 0.4s ease-in-out;
+// }
+
+// .company-card__button:hover span {
+//     color: $green;
+// }   
+
+// .company-card__button:hover {
+//     border: solid 1px $green ;
+// }
+
+// .company-card__button:hover::before {
+//     transform-origin: 0% 50%;
+//     transform: scale(1, 1);
+// }
+
+.company-card__button a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.company-card__button span::after {
+	background-image: url(../images/common/arrow-green.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+    position: absolute;
+    top: 50%;
+    right: rem(20);
+    width: rem(20);
+	height: rem(20);
+	transform: translateY(-50%);
+	transition: 0.4s background-color;
+    @include mq(md){
+        top: 48%;
+        right: rem(20);
+        width: rem(33);
+        height: rem(33);
+    }
+}
+
+// .company-card__button:hover span::after {
+//     background-image: url(../images/common/company-arrow-red.png);
+// }
+
+
+

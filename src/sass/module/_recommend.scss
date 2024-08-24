@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.recommend{
+    background-color: #e5f4e9;
+    text-align: center;
+    background-image: url('../images/common/recommend-bg.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: rem(40) 0 rem(80);
+    @include mq(md) {
+       padding: rem(80) 0;
+    }
+}
+
+.recommend__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 rem(25);
+    @include mq(md) {
+       max-width: rem(1254);
+    }
+}
+
+.recommend__list{
+    margin-top: rem(94);
+    @include mq(md) {
+       margin-top: rem(140);
+    }
+}
