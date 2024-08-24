@@ -9,21 +9,24 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: rem(57) rem(20) rem(68);
-
+    padding: rem(35) rem(12.3) rem(41);
+    margin: auto;
+    width: 87.2%;
+    @include mq(md) {
+        width: 88.5%;
+        padding: rem(57) rem(20) rem(68);
+    }
 }
 
-.recommend-card__name{
+.recommend-card__name {
     position: absolute;
-    top: -4%;
-    left: -7%;
-    width: 113.5%;
+    top: -5%;
+    left: 0%;
+    @include mq(md) {
+        top: -4%;
+    }
 }
 
-.recommend-card__name img {
-    width: 113.5%;
-    height: rem(125);
-}
 
 .recommend-card__title{
     font-size: rem(20);
@@ -36,25 +39,34 @@
 }
 
 .recommend-card__img{
-    width:rem(422) ;
-    height: rem(284);
-    margin: rem(40) auto auto auto;
+    width:rem(259) ;
+    height: rem(174);
+    margin: rem(24) auto auto auto;
+    @include mq(md) {
+        width:rem(422) ;
+        height: rem(284);
+        margin: rem(40) auto auto auto;
+    }
 }
 
 .recommend-card__img img {
-    aspect-ratio: 422/284;
+    aspect-ratio: 259/174;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    @include mq(md) {
+        aspect-ratio: 422/284;
+    }
 }
 
 .recommend-card__source{
-    margin-top: rem(15);
+    margin-top: rem(10);
     display: flex;
     justify-content: center;
     font-size: rem(8.6); 
     font-weight: $regular;
     @include mq(md) {
+        margin-top: rem(15);
         font-size: rem(14); 
     }
 }
@@ -68,27 +80,40 @@
     transition: 0.3s;
 }
 
-
 .recommend-card__strengths-img{
-    width: rem(341);
-    height: rem(76);
-    margin: rem(40) auto auto auto;
+    width: rem(220);
+    height: rem(49);
+    margin: rem(24) auto auto auto;
+    @include mq(md) {
+        width: rem(341);
+        height: rem(76);
+        @include mq(md) {
+            margin: rem(40) auto auto auto;
+        }
+    }
 }
 
 .recommend-card__strengths-list {
     background-color: #ffffff;
     border-radius: rem(4);
     margin-top: rem(-6);
-    padding: rem(12) rem(35) rem(14);
+    padding: rem(7) rem(35) rem(9);
+    @include mq(md) {
+        padding: rem(12) rem(35) rem(14);
+    }
 }
 
 .recommend-card__strengths-item {
-    font-size: rem(20);
+    font-size: rem(16);
     font-weight: $semiBold;
     color: $green;
     text-align: center;
     border-bottom: 1px dashed $green;
-    padding: rem(15) 0;
+    padding: rem(11) 0 rem(6);
+    @include mq(md) {
+        font-size: rem(20);
+        padding: rem(15) 0;
+    }
 }
 
 .recommend-card__strengths-item:last-child {
@@ -96,10 +121,12 @@
 }
 
 .recommend-card__service-img{
-    width: rem(341);
-    height: rem(76);
+    width: rem(223);
+    height: rem(49);
     margin: rem(48) auto auto auto;
     @include mq(md) {
+        width: rem(341);
+        height: rem(76);    
         margin: rem(80) auto auto auto;
     }
 }
@@ -113,21 +140,22 @@
     }
 }
 
-.recommend-card__inspection-text{
-    color: $green;
-    font-size: rem(14);
-    font-weight: $semiBold;
-    line-height: 1.75;
-    background-color: $white;
-    width: 81.6%;
-    margin: rem(-16) auto auto auto;
-    padding: rem(40) 0;
+
+
+.recommend-card__content--blue{
+    background-image: url('../images/common/recommend-card-bg2.png');
 }
 
+.recommend-card__strengths-item--blue{
+    color: $blue;
+}
 
-
-
-
+.recommend-card__strengths-item--blue{
+    font-size: rem(12.26);
+    @include mq(md) {
+       font-size: rem(20);
+    }
+}
 
 
 
@@ -136,14 +164,22 @@
 
 /*ボタン*/
 .company-card__buttons {
-    margin-top: rem(48); /* 追加 */
+    width: 87.2%;
+    margin: rem(29) auto auto auto; /* 追加 */
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include mq(md) {
+        width: 88.5%;
+        margin: rem(48) auto auto auto; /* 追加 */
+    }
 }
 
 .company-card__button + .company-card__button{
-    margin-top: rem(20);
+    margin-top: rem(12);
+    @include mq(md) {
+        margin-top: rem(20);
+    }
 }
 
 .company-card__button {
@@ -154,7 +190,7 @@
     font-size: rem(16);
     font-weight: $bold;
     width: 100%;
-    padding: rem(12) 0;
+    padding: rem(24) 0;
     z-index: 1;
     transition: 0.4s;
     overflow: hidden;
