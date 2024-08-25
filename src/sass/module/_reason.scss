@@ -1,0 +1,76 @@
+@use "global" as *;
+
+.reason{
+    background-color: #D7EFF7;
+    text-align: center;
+    padding: rem(80) 0 0 0 ;
+    @include mq(md) {
+        padding: rem(107) 0 0 0 ;
+    }
+}
+
+.reason__title{
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    @include mq(md) {
+        max-width: rem(1220);
+    }
+}
+
+.reason__icon{
+    position: absolute;
+    top: rem(-7);
+    left: rem(15);
+    width: rem(77.9);
+    height: rem(77.9);
+    @include mq(md) {
+        top: rem(-45);
+        left: 0;
+        width: rem(133);
+        height: rem(133);
+    }
+}
+
+
+.reason__span-orange{
+    color: #FFA83A;
+}
+
+.reason__span-blue{
+    color: $blue;
+}
+
+
+.reason__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 rem(25);
+    @include mq(md) {
+        max-width: rem(1202);
+        padding: 0;
+    }
+}
+
+.reason__bg{
+    background-image: url('../images/common/reason-bg1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.reason__container{
+    margin-top: rem(40);
+    @include mq(md) {
+        margin-top: rem(80);
+    }
+}
+
+.reason__shapes{
+    max-width: $max-width;
+    margin:rem(277) auto auto auto;
+    padding: 0 rem(25);
+    @include mq(md) {
+        max-width: rem(1230);
+    }
+}

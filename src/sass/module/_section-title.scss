@@ -12,6 +12,10 @@
     color: $white;
 }
 
+.section-title__jp--reason{
+    color: $black;
+}
+
 .section-title__en {
     font-family: $second-font-family;
     font-size: rem(16);
@@ -31,7 +35,8 @@
 }
 
 .section-title__prefecture--green,
-.section-title__jp--green{
+.section-title__jp--green,
+.section-title__jp--reason{
     text-shadow: 
         2px 2px 0 $white,
         -2px -2px 0 $white,
