@@ -81,7 +81,7 @@
 }
 
 .section-title__jp--line{
-    line-height: 1;
+    line-height: 1.2;
     @include mq(md) {
         line-height: 1.25;
     }
