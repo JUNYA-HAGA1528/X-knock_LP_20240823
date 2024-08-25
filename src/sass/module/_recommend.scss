@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .recommend{
+    position: relative;
     background-color: #e5f4e9;
     text-align: center;
     background-image: url('../images/common/recommend-bg-sp.png');
@@ -15,6 +16,17 @@
         background-repeat: no-repeat;
         background-size: contain;
     }
+}
+
+.recommend__bg{
+    position: absolute;
+    top: rem(180);
+}
+
+.recommend__bg img {
+    width: rem(864);
+    height: rem(130);
+    object-fit: cover;
 }
 
 .recommend__inner{
@@ -34,3 +46,9 @@
        margin-top: rem(140);
     }
 }
+
+.recommend__title {
+    position: relative;
+    z-index: 100;
+}
+

@@ -1,5 +1,7 @@
 @use 'global' as *;
 
+
+
 .company-cards{
     @include mq(md){
         display: flex;
