@@ -1,0 +1,52 @@
+@use "global" as *;
+
+.recommendation{
+    background-color: #FBF7ED;
+    padding: rem(199) 0 rem(80);
+    color: $black;
+    text-align: center;
+}
+
+.recommendation__head{
+    position: relative;
+}
+
+.recommendation__heading{
+    position: relative;
+    z-index: 10;
+}
+
+.recommendation__head-orange{
+    color: #FEA722;
+}
+
+.recommendation__head-blue{
+    color: $blue;
+}
+
+.recommendation__subtitle{
+    position: relative;
+    margin-top: rem(20);
+    font-size: rem(16);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+    z-index: 10;
+    @include mq(md) {
+        font-size: rem(20);
+    }
+}
+
+.recommendation__cloud  img{
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: rem(421);
+    height: rem(212);
+    z-index: 1;
+    @include mq(md) {
+        top: rem(-122);
+        width: rem(708);
+        height: rem(380);
+    }
+}

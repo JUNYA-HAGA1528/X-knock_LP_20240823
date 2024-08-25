@@ -12,7 +12,7 @@
     color: $white;
 }
 
-.section-title__jp--reason{
+.section-title__jp--black{
     color: $black;
 }
 
@@ -22,6 +22,10 @@
     font-weight: bold; /* 太字にする */
     font-style: italic; /* イタリック体にする */
     text-transform: uppercase;
+}
+
+.section-title__en--red{
+    color:#EB6100 ;
 }
 
 .section-title__prefecture{
@@ -36,8 +40,8 @@
 
 .section-title__prefecture--green,
 .section-title__jp--green,
-.section-title__jp--reason{
-    text-shadow: 
+.section-title__jp--black{
+    text-shadow:
         2px 2px 0 $white,
         -2px -2px 0 $white,
         2px -2px 0 $white,
@@ -56,14 +60,15 @@
     }
 }
 
+
 .section-title__wrapper img {
     width: rem(356);
     height: rem(71);
     margin:auto ;
     @include mq(md) {
-       width:rem(581);
-       height: rem(116);
-       margin: rem(12) auto auto auto ;
+        width:rem(581);
+        height: rem(116);
+        margin: rem(12) auto auto auto ;
     }
 }
 
@@ -79,9 +84,9 @@
     height: rem(70);
     @include mq(md) {
         top: rem(-50);
-        left: rem(170);    
-       width: rem(145);
-       height: rem(145);
+        left: rem(170);
+        width: rem(145);
+        height: rem(145);
     }
 }
 
