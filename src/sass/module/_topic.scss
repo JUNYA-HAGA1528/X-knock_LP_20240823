@@ -1,2 +1,135 @@
 @use "global" as *;
 
+.topic{
+    background-image: url('../images/common/topic-bg-blue-sp.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-color: #25A9D1;
+    color: $white;
+    text-align: center;
+    padding: rem(40) 0;
+    @include mq(md) {
+        background-image: url('../images/common/topic-bg-blue.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;    
+        padding: rem(80) 0;    
+    }
+}
+
+.topic__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 rem(25);
+    @include mq(md) {
+        max-width: rem(1150);
+    }
+}
+
+.topic__title-span{
+    font-size: rem(32);
+    @include mq(md) {
+        font-size: rem(48);
+    }
+}
+
+.topic__content{
+    margin-top: rem(40);
+    font-weight: $semiBold;
+    font-size: rem(16);
+    letter-spacing: 0.01em;
+    line-height: 1.75;
+    @include mq(md) {
+        margin-top: rem(80);
+        display: flex;
+        align-items: center;
+        gap: 0 rem(80);
+        font-size: rem(20);
+        line-height: 1.4;
+    }
+}
+
+.topic__img{
+    width: 82%;
+    margin: rem(40) auto auto auto;
+    @include mq(md) {
+        width: 47.1%;
+        margin-top: rem(-50) auto auto auto;
+    }
+}
+
+.topic__img img {
+    aspect-ratio: 280/237;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include mq(md) {
+        aspect-ratio: 518/440;
+    }
+}
+
+.topic__sentence{
+    width: 100%;
+    text-align: left;
+    @include mq(md) {
+        width: 45.54%;
+    }
+}
+
+.topic__textBox{
+    width: 100%;
+    margin: rem(20) auto auto auto;
+    @include mq(md) {
+        width: 95%;
+        margin: auto;
+    }
+}
+
+.topic__text + .topic__text{
+    margin-top: rem(30);
+}
+
+.topic__text-yellow{
+    color: #FFEA00;
+}
+
+.topic__text-orange{
+    color: #FEA722;
+}
+
+.topic__frame {
+    margin-top: rem(20);
+    display: flex;
+    justify-content: center; /* 水平方向に中央揃え */
+    align-items: center; /* 垂直方向に中央揃え */
+    position: relative;
+}
+
+.topic__frame-text + .topic__frame-text{
+    margin-top: rem(30);
+}
+
+.topic__frame-img{
+    display: block;
+    width: rem(340);
+    margin: auto;
+    @include mq(md) {
+        width: 100%;
+    }
+}
+
+.topic__frame-textBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: rem(40) rem(20) rem(33);
+    color: $black;
+    width: rem(340);
+    border-radius: 10px;
+    @include mq(md) {
+        width: 100%;
+        padding: rem(50) rem(38) rem(39);
+    }
+}

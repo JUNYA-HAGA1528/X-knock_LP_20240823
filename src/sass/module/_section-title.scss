@@ -8,6 +8,10 @@
     color: $green;
 }
 
+.section-title--white{
+    color: $white;
+}
+
 .section-title__en {
     font-family: $second-font-family;
     font-size: rem(16);
@@ -42,7 +46,7 @@
     line-height: 1.25;
     letter-spacing: 0.04em;
     @include mq(md) {
-        margin-top: rem(0);
+        margin-top: rem(20);
         font-size: rem(48);
     }
 }
@@ -75,3 +79,11 @@
        height: rem(145);
     }
 }
+
+.section-title__jp--line{
+    line-height: 1;
+    @include mq(md) {
+        line-height: 1.25;
+    }
+}
+
