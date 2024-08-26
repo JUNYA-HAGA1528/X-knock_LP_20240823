@@ -97,3 +97,9 @@
     }
 }
 
+.section-title__en--padding{
+    padding-bottom: rem(46);
+    @include mq(md) {
+        padding-bottom: 0;
+    }
+}
