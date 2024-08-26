@@ -1,0 +1,59 @@
+@use "global" as *;
+
+.subsidy{
+    text-align: center;
+    background-color: #46B2E7;
+    padding: rem(80) 0;
+}
+
+.subsidy__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 rem(25);
+    @include mq(md) {
+        max-width: rem(1234);
+    }
+}
+
+.subsidy__color-orange{
+    background-color: #FEA722;
+    padding: rem(25) rem(44);
+}
+
+.subsidy__color-red{
+    background-color: #EB6100;
+}
+
+.subsidy__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: rem(40);
+    font-size: 16px;
+    @include mq(md) {
+        margin-top: rem(80);
+    }
+}
+
+.subsidy__table thead {
+    background-color: #FEA722;
+    color: white;
+}
+
+
+
+.subsidy__table tbody tr {
+    background-color: #ffe9cf;
+}
+
+.subsidy__table tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+.subsidy__table a {
+    color: #0089b6;
+    text-decoration: none;
+}
+
+.subsidy__table a:hover {
+    text-decoration: underline;
+}
