@@ -2,9 +2,30 @@
 
 .recommendation{
     background-color: #FBF7ED;
-    padding: rem(199) 0 rem(80);
+    padding:0 0 rem(80) 0;
     color: $black;
     text-align: center;
+    @include mq(md) {
+        padding:rem(90) 0 rem(80);
+    }
+}
+
+.recommendation__head{
+    max-width: rem(420);
+    margin: auto;
+    text-align: center;
+    background-image: url('../images/common/recommendation-cloud.png');
+    background-position: center calc(50% + -49px);
+    background-repeat: no-repeat;
+    background-size: rem(421) rem(212);
+    padding-top: rem(70);
+    @include mq(md) {
+        max-width: 100%;
+        background-position: center calc(50% - -13px);
+        background-size: rem(708) rem(356);
+        padding-top: rem(99);
+    }
+
 }
 
 .recommendation__head-orange{
@@ -17,18 +38,22 @@
 
 .recommendation__subtitle{
     position: relative;
+    text-align: left;
     margin-top: rem(20);
+    padding: 0 rem(25);
     font-size: rem(16);
     font-weight: $bold;
     letter-spacing: 0.01em;
     z-index: 10;
     @include mq(md) {
+        text-align: center;
+        padding: 0;
         font-size: rem(20);
     }
 }
 
 .recommendation__inner{
-    max-width: $max-width;
+
     margin: auto;
     @include mq(md) {
         max-width: rem(1440);
@@ -37,5 +62,18 @@
 }
 
 .recommendation__list{
-    margin-top: rem(126);
+    margin-top: rem(45);
+    @include mq(md) {
+        margin-top: rem(102);
+    }
+}
+
+.recommendation__comment{
+    max-width: $max-width;
+    margin: rem(40) auto auto auto;
+    @include mq(md) {
+        max-width: rem(1277);
+        margin: rem(80) auto auto auto;
+        padding: 0 rem(25);
+    }
 }

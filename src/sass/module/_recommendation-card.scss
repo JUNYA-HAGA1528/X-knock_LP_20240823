@@ -10,7 +10,7 @@
     }
 }
 
-.recommendation-card__item + .recommendation-card__item{
+.recommendation-card__item--margin + .recommendation-card__item--margin{
     margin-top: rem(40);
     @include mq(md) {
         margin-top: rem(102);
@@ -43,12 +43,12 @@
 
 .recommendation-card__wrapper{
     position: relative;
-    width: 90%;
+    width: 93.6%;
     background-color: #FFA83A;
     margin-top: rem(20);
     padding: rem(54) 2.55% rem(40) ;
-    border-top-left-radius: 10px;    /* 左上を丸くする */
-    border-bottom-left-radius: 10px; /* 左下を丸くする */
+    border-top-left-radius: rem(10);    /* 左上を丸くする */
+    border-bottom-left-radius: rem(10); /* 左下を丸くする */
     margin-left: auto; /* これで右寄せになります */
     @include mq(md) {
         width: 59.91%;
@@ -97,12 +97,67 @@
 
 
 /*point02*/
-.recommendation-card__item{
+.recommendation-card__item-second{
     position: relative;
     z-index: 10;
+}
+
+.recommendation-card__wrapper-second{
+    position: relative;
+    width: 93.6%;
+    background-color: #FF802D;
+    margin-top: rem(20);
+    padding: rem(54) 2.55% rem(40) ;
+    border-top-right-radius: rem(10);    /* 左上を丸くする */
+    border-bottom-right-radius: rem(10); /* 左下を丸くする */
     @include mq(md) {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+        width: 59.91%;
+        margin-top: rem(0);
+        padding: rem(90) 9% rem(77) 6.26%
     }
+}
+
+.recommendation-card__img-second {
+    @include mq(md) {
+        position: absolute;
+        top: 50%;
+        width: 40%;
+        left: 50.7%;
+        transform: translateY(-50%);
+        z-index: 100;
+    }
+}
+
+.recommendation-card__img-second img {
+    aspect-ratio: 340/238;
+    width: 87%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: auto;
+    @include mq(md) {
+        aspect-ratio: 576/404;
+        width: 100%;
+        height: 100%;
+        height: rem(404);
+        margin: auto;
+    }
+}
+
+.recommendation__point-second{
+    position: absolute;
+    top: -13.5%;
+    left: 78%;
+    width: rem(72);
+    height: rem(72);
+    z-index: 1000;
+    @include mq(md) {
+        top: -5%;
+        left: 75%;
+        width: rem(128);
+        height: rem(128);
+    }
+}
+
+.recommendation-card__span-orange{
+    color:#FDD23E;
 }
