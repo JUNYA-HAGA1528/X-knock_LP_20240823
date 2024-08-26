@@ -7,15 +7,6 @@
     text-align: center;
 }
 
-.recommendation__head{
-    position: relative;
-}
-
-.recommendation__heading{
-    position: relative;
-    z-index: 10;
-}
-
 .recommendation__head-orange{
     color: #FEA722;
 }
@@ -36,17 +27,15 @@
     }
 }
 
-.recommendation__cloud  img{
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: rem(421);
-    height: rem(212);
-    z-index: 1;
+.recommendation__inner{
+    max-width: $max-width;
+    margin: auto;
     @include mq(md) {
-        top: rem(-122);
-        width: rem(708);
-        height: rem(380);
+        max-width: rem(1440);
+        padding: 0;
     }
+}
+
+.recommendation__list{
+    margin-top: rem(126);
 }
