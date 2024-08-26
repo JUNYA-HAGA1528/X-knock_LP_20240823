@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.choice{
+    padding: rem(100) 0 rem(80);
+    background-color: #FBF7ED;
+    @include mq(md) {
+        padding: rem(100) 0 rem(80);
+    }
+}

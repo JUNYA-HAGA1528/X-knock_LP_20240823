@@ -57,7 +57,7 @@
         2px -2px 0 $white,
         -2px 2px 0 $white;
     @include mq(md) {
-       font-size: rem(48);
+        font-size: rem(48);
     }
 }
 
@@ -78,7 +78,7 @@
 }
 
 .reduction__span-yellow{
-    color:#FEA722 ;
+    color:$high-orange ;
 }
 
 .reduction__span-green{
@@ -90,8 +90,8 @@
     height: rem(310);
     margin:rem(8) auto auto auto;
     @include mq(md) {
-       width: rem(531);
-       height: rem(486);
+        width: rem(531);
+        height: rem(486);
     }
 }
 
@@ -132,10 +132,10 @@
 }
 
 .reduction__text span {
-    color: #FEA722;
+    color: $high-orange;
     font-size: rem(20);
     @include mq(md) {
-       font-size: rem(28);
+        font-size: rem(28);
     }
 }
 

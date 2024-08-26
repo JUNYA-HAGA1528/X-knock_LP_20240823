@@ -16,6 +16,12 @@
     color: $black;
 }
 
+.section-title__jp--red{
+    color:#EB6100 ;
+}
+
+
+
 .section-title__en {
     font-family: $second-font-family;
     font-size: rem(16);
@@ -26,6 +32,10 @@
 
 .section-title__en--red{
     color:#EB6100 ;
+}
+
+.section-title__en--orange{
+    color:$orange ;
 }
 
 .section-title__prefecture{
