@@ -1,16 +1,20 @@
 @use "global" as *;
 
 .detail{
+    background-color: rgba(24, 163, 55, 0.11);
     text-align: center;
+    @include mq(md) {
+        background-color: none;
+    }
 }
 
 .detail__container{
     display: flex;
-    max-width: $max-width;
+    justify-content: center;
+    max-width: rem(500);
     margin: auto;
     @include mq(md) {
         max-width: rem(1440);
-        margin: auto;
     }
 }
 
@@ -24,26 +28,8 @@
 
 .detail__item{
     background-color: rgba(24, 163, 55, 0.11);
-    padding: rem(120) 0 rem(80);
+    padding-top: rem(120);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

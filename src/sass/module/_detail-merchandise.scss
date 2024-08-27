@@ -1,1 +1,170 @@
 @use "global" as *;
+
+.detail-merchandise{
+    background-color: #ECF9FF;
+    padding: rem(80) 0;
+}
+
+.detail-merchandise__inner{
+    @include mq(md) {
+        max-width: rem(974);
+        margin: auto;
+    }
+}
+
+.detail-merchandise__title{
+    font-size: rem(28);
+    font-weight: $bold;
+    color: #2FB0D7;
+    text-shadow:
+    2px 2px 0 $white,
+    -2px -2px 0 $white,
+    2px -2px 0 $white,
+    -2px 2px 0 $white;
+    @include mq(md) {
+        font-size: rem(36);
+    }
+}
+
+.detail-merchandise___img{
+    width: rem(334);
+    height: rem(575);
+    margin: rem(40) auto auto auto;
+    @include mq(md) {
+        width: rem(856);
+        height: rem(406);
+        margin: rem(80) auto auto auto;
+    }
+}
+
+
+
+
+
+/*ボタン*/
+.detail-merchandise__buttons {
+    width: 100%;
+    margin: rem(72) auto auto auto; /* 追加 */
+    @include mq(md) {
+        display: flex;
+        gap: 0 rem(31.2);
+        margin: rem(121) auto auto auto; /* 追加 */
+    }
+}
+
+.detail-merchandise__button + .detail-merchandise__button{
+    margin-top: rem(12);
+    @include mq(md) {
+        margin-top: rem(0);
+    }
+}
+
+.detail-merchandise__button {
+    background: linear-gradient(to bottom right, #18A337 50%, #2BB349 50%);
+    position: relative;
+    color: $white;
+    font-size: rem(16);
+    font-weight: $bold;
+    width: 100%;
+    padding: rem(24) 0;
+    z-index: 1;
+    transition: 0.4s;
+    overflow: hidden;
+    border-radius: rem(3.2);
+    @include mq(md){
+        padding: rem(24.5) 0;
+        font-size: rem(24.74);
+        font-weight: $bold;
+        letter-spacing: 0.124em;
+    }
+}
+
+.detail-merchandise__button--orange {
+    background: linear-gradient(to bottom right, #FEA722 50%, #FFBC56 50%);
+}
+
+.detail-merchandise__button--blue {
+    background: linear-gradient(to bottom right, #0A9ECB 50%, #2FB0D7 50%);
+}
+
+
+// .detail-merchandise__button::before {
+//     content: "";
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     z-index: -1;
+//     background-color: #fff;
+//     transform-origin: 100% 50%;
+//     transform: scaleX(0);
+//     transition: transform ease 0.4s;
+// }
+
+// .detail-merchandise__button::after{
+//     border-radius: rem(0);
+//     transition: all 0.4s ease-in-out;
+// }
+
+// .detail-merchandise__button:hover span {
+//     color: $green;
+// }   
+
+// .detail-merchandise__button:hover {
+//     border: solid 1px $green ;
+// }
+
+// .detail-merchandise__button:hover::before {
+//     transform-origin: 0% 50%;
+//     transform: scale(1, 1);
+// }
+
+.detail-merchandise__button a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.detail-merchandise__button span::after {
+	background-image: url(../images/common/arrow-green.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+    position: absolute;
+    top: 50%;
+    right: rem(20);
+    width: rem(20);
+	height: rem(20);
+	transform: translateY(-50%);
+	transition: 0.4s background-color;
+    @include mq(md){
+        top: 47%;
+        right: rem(20);
+        width: rem(26);
+        height: rem(26);
+    }
+}
+
+
+.detail-merchandise__button--orange span::after {
+	background-image: url(../images/common/arrow-orange.png);
+}
+
+.detail-merchandise__button--blue span::after {
+	background-image: url(../images/common/arrow-blue.png);
+}
+
+// .detail-merchandise__button:hover span::after {
+//     background-image: url(../images/common/detail-merchandise-arrow-red.png);
+// }
+
+
+
+
+
+
+
