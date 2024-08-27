@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.choice-cards{
+    @include mq(md){
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.choice-cards__item{
+    background-color: $white;
+    padding-top: rem(100);
+    position: relative;
+    @include mq(md){
+        max-width: calc(33.3333% - rem(54) * 2 / 3 );
+        width: 100%;
+    }
+}
+
+.choice-cards__item + .choice-cards__item{
+    margin-top: rem(220);
+    @include mq(md){
+        margin-top: 0;
+        margin-left: rem(54);
+    }
+}

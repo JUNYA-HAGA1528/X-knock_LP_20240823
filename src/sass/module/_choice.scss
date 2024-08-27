@@ -17,15 +17,6 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
 .choice__list{
     margin-top: rem(177);
     @include mq(md) {
@@ -33,122 +24,114 @@
     }
 }
 
-.choice-cards{
+
+
+
+
+
+
+
+
+
+
+.choice__buttons {
+    text-align: center;
+    margin-top: rem(40);
     @include mq(md){
-        display: flex;
-        flex-wrap: wrap;
+        margin-top: rem(93.5);
     }
 }
 
-.choice-cards__item{
-    background-color: $white;
-    padding-top: rem(100);
-    position: relative;
-    @include mq(md){
-        max-width: calc(33.3333% - rem(54) * 2 / 3 );
-        width: 100%;
-    }
-}
-
-.choice-cards__item + .choice-cards__item{
-    margin-top: rem(220);
-    @include mq(md){
-        margin-top: 0;
-        margin-left: rem(54);
-    }
-}
-
-
-.choice-card__top {
-    position: absolute;
-    top: -6%; /* 親要素の50%位置 */
-    left: 50%;
-    transform: translate(-50%, -50%); /* 画像の中央を基準に位置を調整 */
-    width: rem(306);
-    height: rem(258);
-    @include mq(md) {
-        top: -7.5%; /* 親要素の50%位置 */
-        width: rem(321);
-        height: rem(271);
-    }
-}
-
-.choice-card__top img {
-    width: 100%; /* 画像の幅を親要素に合わせる */
-    height: 100%;
-    object-fit: cover;
-}
-
-
-
-
-
-.choice-card__center {
+.choice__buttons-heading{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* 上揃えにする */
-    background-color: $orange;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.choice__buttons-text{
+    color: #EB6100;
+    font-size: rem(16);
+    font-weight: $semiBold;
+    letter-spacing: 0.155em;
+    white-space: nowrap;
+}
+
+.choice__buttons-heading img{
+    width: rem(10);
+    height: rem(32.73);
+    margin: 0 rem(11);
+}
+
+.choice__button {
+    background: linear-gradient(to bottom right, #FEA722 50%, #FFBC56 50%);
+    position: relative;
     color: $white;
-    padding: rem(20) rem(20) ;
-    @include mq(md) {
-        min-height: rem(213);
+    font-size: rem(20);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+    width: rem(340);
+    padding: rem(14.5) 0;
+    border-radius: rem(4);
+    z-index: 1;
+    transition: 0.4s;
+    margin-top: rem(4);
+    overflow: hidden;
+    @include mq(md){
+        font-size: rem(30.93);
+        padding: rem(36.5) 0;
+        width: rem(873);
+        margin-top: 0;
     }
 }
 
-.choice-card__center-text {
-    flex-grow: 1; /* 高さを揃える */
-    font-size: rem(16);
-    font-weight: $bold;
-    line-height: 1.75;
-    letter-spacing: 0.05em;
+.choice__button::before {
+    border-radius: rem(50);
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #fff;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform ease 0.4s;
 }
 
 
-.choice-card__center-span{
+.choice__button-text::after {
+	background-image: url(../images/common/arrow-orange.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+    position: absolute;
+    top: 49%;
+    right: rem(14);
+    width: rem(20);
+	height: rem(20);
+	transform: translateY(-50%);
+	transition: 0.4s background-color;
+    @include mq(md){
+        right: rem(40);
+        width: rem(34);
+        height: rem(34);
+    }
+}
+
+.choice__button-color{
     color: #EB6100;
 }
 
-
-
-
-
-
-.choice-card__bottom {
-    background-color: $white;
-    padding: rem(20) rem(18) rem(20) rem(22);
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* 中央揃え */
+.choice__button:hover {
+    transform: scale(1.05);
 }
 
-.choice-card__bottom-text {
-    padding: rem(10) 0 ;
-    font-size: rem(16);
-    font-weight: $medium;
-    line-height: 1.75;
-    letter-spacing: 0.05em;
-    @include mq(md) {
-        min-height: rem(271);
+
+
+@media screen and (max-width: 768px) {
+    .choice__button-none {
+        display: none;
     }
-}
-
-.choice-card__bottom-span{
-    font-size: $bold;
-    color: $orange;
-}
-
-.choice-card__bottom-img{
-    width: rem(244);
-    height: rem(41.5);
-    margin: auto;
-}
-
-
-
-
-
-.choice-card__bottom-top-img{
-    width: rem(244);
-    height: rem(41.5);
-    margin: auto;
 }
