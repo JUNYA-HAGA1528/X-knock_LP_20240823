@@ -34,7 +34,7 @@
     line-height: 1.25;
     letter-spacing: 0.01em;
     @include mq(md) {
-       font-size: rem(32);
+        font-size: rem(32);
     }
 }
 
@@ -63,11 +63,11 @@
     margin-top: rem(10);
     display: flex;
     justify-content: center;
-    font-size: rem(8.6); 
+    font-size: rem(8.6);
     font-weight: $regular;
     @include mq(md) {
         margin-top: rem(15);
-        font-size: rem(14); 
+        font-size: rem(14);
     }
 }
 
@@ -126,7 +126,7 @@
     margin: rem(48) auto auto auto;
     @include mq(md) {
         width: rem(341);
-        height: rem(76);    
+        height: rem(76);
         margin: rem(80) auto auto auto;
     }
 }
@@ -136,7 +136,7 @@
     display: flex;
     gap: 0 rem(6);
     @include mq(md) {
-       margin-top:rem(40) ;
+        margin-top:rem(40) ;
     }
 }
 
@@ -153,7 +153,7 @@
 .recommend-card__strengths-item--blue{
     font-size: rem(12.26);
     @include mq(md) {
-       font-size: rem(20);
+        font-size: rem(20);
     }
 }
 
@@ -183,8 +183,7 @@
 }
 
 .company-card__button {
-    background: $green;
-    border: solid 1px $green ;
+    background: linear-gradient(to bottom right, #18A337 50%, #2BB349 50%);
     position: relative;
     color: $white;
     font-size: rem(16);
@@ -201,6 +200,15 @@
         letter-spacing: 0.03em;
     }
 }
+
+.company-card__button--orange {
+    background: linear-gradient(to bottom right, #FEA722 50%, #FFBC56 50%);
+}
+
+.company-card__button--blue {
+    background: linear-gradient(to bottom right, #0A9ECB 50%, #2FB0D7 50%);
+}
+
 
 // .company-card__button::before {
 //     content: "";
@@ -261,6 +269,15 @@
         width: rem(33);
         height: rem(33);
     }
+}
+
+
+.company-card__button--orange span::after {
+	background-image: url(../images/common/arrow-orange.png);
+}
+
+.company-card__button--blue span::after {
+	background-image: url(../images/common/arrow-blue.png);
 }
 
 // .company-card__button:hover span::after {
