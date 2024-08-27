@@ -1,14 +1,17 @@
 @use "global" as *;
 
 .detail{
-    @include mq(md){
-        max-width: rem(1440);
-        margin: auto;
-    }
+    text-align: center;
 }
 
 .detail__container{
     display: flex;
+    max-width: $max-width;
+    margin: auto;
+    @include mq(md) {
+        max-width: rem(1440);
+        margin: auto;
+    }
 }
 
 .detail__content{
@@ -19,17 +22,43 @@
     }
 }
 
-.detail__inner{
-    max-width: max-width;
-    margin: auto;
-    padding: 0 rem(25);
-    @include mq(md) {
-        max-width: rem(974);
-    }
+.detail__item{
+    background-color: rgba(24, 163, 55, 0.11);
+    padding: rem(120) 0 rem(80);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .detail__aside{
     width: 100%;
+    background-color: $white;
     @include mq(md){
         width: 26.56%;
     }
