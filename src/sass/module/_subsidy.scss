@@ -15,45 +15,31 @@
     }
 }
 
-.subsidy__color-orange{
-    background-color: $high-orange;
-    padding: rem(25) rem(44);
-}
-
-.subsidy__color-red{
-    background-color: #EB6100;
-}
-
-.subsidy__table {
-    width: 100%;
-    border-collapse: collapse;
+.subsidy__img{
     margin-top: rem(40);
-    font-size: 16px;
     @include mq(md) {
-        margin-top: rem(80);
+        margin-top: rem(40);
     }
 }
 
-.subsidy__table thead {
-    background-color: $high-orange;
-    color: white;
+.subsidy__sentence{
+    text-align: left;
+    max-width: $max-width;
+    margin:rem(40) auto auto auto;
+    padding: 0 rem(25);
+    @include mq(md) {
+        max-width: rem(1071);
+        margin:rem(80) auto auto auto;
+    }
 }
 
-
-
-.subsidy__table tbody tr {
-    background-color: #ffe9cf;
-}
-
-.subsidy__table tbody tr:nth-child(even) {
-    background-color: #fff;
-}
-
-.subsidy__table a {
-    color: #0089b6;
-    text-decoration: none;
-}
-
-.subsidy__table a:hover {
-    text-decoration: underline;
+.subsidy__text{
+    color: $white;
+    font-size: rem(16);
+    font-weight: $semiBold;
+    letter-spacing: 0.01em;
+    line-height: 1.75;
+    @include mq(md) {
+        font-size: rem(20);
+    }
 }

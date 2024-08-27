@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.detail{
+    @include mq(md){
+        max-width: rem(1440);
+        margin: auto;
+    }
+}
+
+.detail__container{
+    display: flex;
+}
+
+.detail__list{
+    width: 100%;
+    @include mq(md){
+        width: 85.34%;
+        max-width: rem(1098);
+    }
+}
+
+.detail__aside{
+    width: 100%;
+    @include mq(md){
+        width: 26.56%;
+    }
+}
