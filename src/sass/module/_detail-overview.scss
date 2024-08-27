@@ -1,0 +1,131 @@
+@use "global" as *;
+
+.detail-overview{
+    padding: rem(80) 0;
+}
+
+.detail-overview__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 rem(25);
+    @include mq(md) {
+        max-width: rem(791);
+    }
+}
+
+.detail-overview__frame{
+    background-image: url('../images/common/detail-overview-frame.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: rem(741) rem(321);
+    padding: 80px 0;
+}
+
+.detail-overview__table {
+    border-collapse: collapse;
+    font-family: "Inter", sans-serif;
+    font-size: rem(14);
+    line-height: calc(18/14);
+    max-width: rem(481);
+    margin: rem(40) auto auto auto;
+    background-color: $white;
+}
+
+.detail-overview__table th, 
+.detail-overview__table td {
+    border: 1px solid #828282; /* セルの境界線 */
+    font-weight: $regular;
+}
+
+.detail-overview__table th {
+    color: $green; /* 文字色を白に */
+    width: rem(123);
+    vertical-align: center; /* 上部揃え */
+    letter-spacing: 0.18em;
+    padding: rem(10) 0;
+    font-weight: $semiBold;
+
+}
+
+.detail-overview__table td {
+    color: $black; /* 文字色を黒に */
+    text-align: left; /* 左揃え */
+    vertical-align: top; /* 上部揃え */
+    padding: rem(11) rem(17) rem(11) rem(11);
+    font-weight: $semiBold;
+    width: rem(358);
+}
+
+.detail-overview__table a {
+    color:$black; /* リンクの文字色 */
+    text-decoration: none; /* リンクの下線を消す */
+}
+
+.detail-overview__table a:hover {
+    text-decoration: underline; /* リンクにホバーしたときの下線 */
+}
+
+
+
+
+
+
+
+.detail-overview__sp-title{
+    width: 78.3%;
+    margin: auto;
+}
+
+.detail-overview__sp-wrapper{
+    margin-top: rem(40);
+}
+
+.detail-overview__frame-sp {
+    position: relative;
+    text-align: center; /* 中央揃え */
+}
+
+.detail-overview__frame-sp img {
+    width: 100%; /* 画像をフレームの幅に合わせる */
+    display: block;
+    margin: 0 auto;
+}
+
+.detail-overview__sp-list {
+    position: absolute;
+    top: 50%; /* 垂直方向の中央揃え */
+    left: 50%; /* 水平方向の中央揃え */
+    transform: translate(-50%, -50%); /* 中央に配置 */
+    width: 100%; /* リストの幅を100%に設定 */
+    padding: 0 rem(20); /* 内側にパディングを追加 */
+    box-sizing: border-box; /* パディングが幅に影響しないように */
+}
+
+.detail-overview__sp-item + .detail-overview__sp-item {
+    margin-top: rem(20);
+}
+
+.detail-overview__sp-item dd {
+    color: $green;
+    font-size: rem(16);
+    font-weight: $semiBold;
+}
+
+.detail-overview__sp-item dt {
+    color: $black;
+    font-size: rem(16);
+    font-weight: $semiBold;
+}
+
+.detail-overview__sp-item a {
+    color: $black; /* リンクの文字色 */
+    text-decoration: none; /* リンクの下線を消す */
+}
+
+.detail-overview__sp-item a:hover {
+    text-decoration: underline; /* リンクにホバーしたときの下線 */
+}
+
+
+
+

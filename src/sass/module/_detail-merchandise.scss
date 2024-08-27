@@ -6,9 +6,11 @@
 }
 
 .detail-merchandise__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 rem(25);
     @include mq(md) {
-        max-width: rem(974);
-        margin: auto;
+        max-width: rem(967);
     }
 }
 
