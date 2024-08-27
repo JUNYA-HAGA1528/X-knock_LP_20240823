@@ -11,7 +11,7 @@
 
 .reason__title{
     position: relative;
-    max-width: 100%;
+    max-width: rem(370);
     margin: auto;
     @include mq(md) {
         max-width: rem(1220);
@@ -59,11 +59,10 @@
     }
 }
 
+
+
+
 .reason__shapes {
-    background-image: url('../images/common/reason-bg2.png');
-    background-position: calc(50% - 17px) top;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
     @include mq(md) {
         background-image: url('../images/common/reason-bg2.png');
@@ -73,12 +72,30 @@
     }
 }
 
+.reason__head{
+    margin-top: rem(55);
+}
 
+
+.reason__bgc{
+    background: linear-gradient(
+    to top, 
+    #8CC63F 0%, 
+    #A3CD38 14%, 
+    #BBD532 32%, 
+    #CBDB2E 52%, 
+    #D5DE2B 73%, 
+    #D9E02B 100%
+    );
+    @include mq(md) {
+        background: none;
+    }
+}
 
 .reason__shapes-inner{
     max-width: $max-width;
     margin:auto;
-    padding: rem(200) rem(25) rem(79);
+    padding: rem(53) rem(25) rem(79);
     @include mq(md) {
         max-width: rem(1230);
         padding: rem(250) rem(25) rem(169);
