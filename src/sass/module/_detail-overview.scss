@@ -1,7 +1,10 @@
 @use "global" as *;
 
 .detail-overview{
-    padding: rem(80) 0;
+    padding: rem(40) 0 rem(80);
+    @include mq(md) {
+        padding: rem(80) 0;
+    }
 }
 
 .detail-overview__inner{
@@ -113,6 +116,7 @@
 
 .detail-overview__sp-item dt {
     color: $black;
+    margin-top: rem(10);
     font-size: rem(16);
     font-weight: $semiBold;
 }

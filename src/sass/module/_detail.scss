@@ -28,7 +28,10 @@
 
 .detail__item{
     background-color: rgba(24, 163, 55, 0.11);
-    padding-top: rem(120);
+    padding-top: rem(100);
+    @include mq(md) {
+        padding-top: rem(150);
+    }
 }
 
 
