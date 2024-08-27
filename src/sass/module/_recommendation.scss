@@ -39,21 +39,23 @@
 .recommendation__subtitle{
     position: relative;
     text-align: left;
-    margin-top: rem(20);
+    margin-top: rem(40);
     padding: 0 rem(25);
     font-size: rem(16);
     font-weight: $bold;
+    line-height: calc(28/16);
     letter-spacing: 0.01em;
     z-index: 10;
     @include mq(md) {
         text-align: center;
+        margin-top: rem(20);
         padding: 0;
         font-size: rem(20);
     }
 }
 
 .recommendation__inner{
-
+    max-width: $max-width;
     margin: auto;
     @include mq(md) {
         max-width: rem(1440);
@@ -64,7 +66,7 @@
 .recommendation__list{
     margin-top: rem(45);
     @include mq(md) {
-        margin-top: rem(102);
+        margin-top: rem(126);
     }
 }
 

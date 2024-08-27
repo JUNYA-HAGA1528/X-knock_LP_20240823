@@ -64,7 +64,7 @@
     font-weight: $semiBold;
     letter-spacing: 0.01em;
     text-align: left;
-    padding: 0 rem(20);
+    padding: 0 rem(16);
     @include mq(md) {
         margin-top: rem(42);
         font-size: rem(20);

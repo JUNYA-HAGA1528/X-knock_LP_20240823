@@ -4,7 +4,7 @@
     background-color: #ECF9FF;
     padding: rem(40) 0;
     @include mq(md) {
-        padding: rem(80) 0;
+        padding: rem(92) 0 rem(80);
     }
 }
 
@@ -93,13 +93,13 @@
     font-weight: $bold;
     letter-spacing: 0.096em;
     width: 100%;
-    padding: rem(26) 0 rem(22);
+    padding: rem(24) 0 rem(20);
     z-index: 1;
     transition: 0.4s;
     overflow: hidden;
     border-radius: rem(3.2);
     @include mq(md){
-        padding: rem(26) 0 rem(22);
+        padding: rem(32) 0 rem(26);
         font-size: rem(24.74);
         font-weight: $bold;
         letter-spacing: 0.124em;

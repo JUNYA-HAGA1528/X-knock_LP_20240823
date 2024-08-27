@@ -38,7 +38,7 @@
     text-align: center;
     margin-top: rem(40);
     @include mq(md){
-        margin-top: rem(93.5);
+        margin-top: rem(80);
     }
 }
 
@@ -108,7 +108,7 @@
 	content: "";
     position: absolute;
     top: 49%;
-    right: rem(14);
+    right: rem(32);
     width: rem(20);
 	height: rem(20);
 	transform: translateY(-50%);

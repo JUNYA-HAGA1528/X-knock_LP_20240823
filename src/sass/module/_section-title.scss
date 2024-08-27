@@ -27,7 +27,11 @@
     font-size: rem(16);
     font-weight: bold; /* 太字にする */
     font-style: italic; /* イタリック体にする */
-    text-transform: uppercase;
+    text-transform: uppercase; /* すべての文字を大文字にする */
+}
+
+.section-title__en--font{
+    text-transform: capitalize;
 }
 
 .section-title__en--red{
@@ -100,10 +104,18 @@
     }
 }
 
+
 .section-title__jp--line{
     line-height: 1.2;
     @include mq(md) {
         line-height: 1.25;
+    }
+}
+
+.section-title__jp--padding{
+    padding-bottom: rem(10);
+    @include mq(md) {
+        padding-bottom: 0;
     }
 }
 

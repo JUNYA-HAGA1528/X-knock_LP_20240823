@@ -30,9 +30,10 @@
     align-items: flex-start; /* 上揃えにする */
     background-color: $orange;
     color: $white;
-    padding: rem(20) rem(20) ;
+    padding: rem(32) rem(20) ;
     @include mq(md) {
         min-height: rem(213);
+        padding: rem(20) ;
     }
 }
 
@@ -74,7 +75,7 @@
 }
 
 .choice-card__bottom-span{
-    font-size: $bold;
+    font-weight: $bold;
     color: $orange;
 }
 

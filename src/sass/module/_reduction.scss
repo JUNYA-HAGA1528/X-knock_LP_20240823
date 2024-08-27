@@ -13,7 +13,7 @@
         background-position: calc(50% - 48px) bottom; /* 左に10px、下に固定 */
         background-repeat: no-repeat;
         background-size: rem(1537) rem(1338);
-        padding: rem(135) 0 rem(90);
+        padding: rem(170) 0 rem(90);
     }
 }
 
@@ -135,7 +135,7 @@
     color: $low-orange;
     font-size: rem(20);
     @include mq(md) {
-        font-size: rem(28);
+        font-size: rem(30);
     }
 }
 

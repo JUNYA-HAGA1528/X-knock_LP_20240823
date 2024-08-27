@@ -82,10 +82,7 @@
 }
 
 .topic-green__text + .topic-green__text{
-    margin-top: rem(20);
-    @include mq(md) {
-        margin-top: rem(30);
-    }
+    margin-top: rem(30);
 }
 
 .topic-green__lightOrange{
@@ -97,11 +94,14 @@
 }
 
 .topic-green__frame {
-    margin-top: rem(20);
+    margin-top: rem(40);
     display: flex;
     justify-content: center; /* 水平方向に中央揃え */
     align-items: center; /* 垂直方向に中央揃え */
     position: relative;
+    @include mq(md) {
+        margin-top: rem(20);
+    }
 }
 
 .topic-green__frame-text + .topic-green__frame-text{

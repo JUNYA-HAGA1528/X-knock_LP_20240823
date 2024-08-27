@@ -28,13 +28,15 @@
     background-position: center rem(30); 
     background-repeat: no-repeat;
     background-size: rem(409) rem(184);
-    padding: rem(50) 0;
+    padding: rem(50) 0 rem(20);
     @include mq(md) {
         max-width: rem(1174);
         background-position: rem(220) rem(0); 
         background-size: rem(708) rem(320);
+        padding: rem(50) 0;
     }
 }
+
 
 .company__title-font{
     font-size: rem(32);
@@ -42,7 +44,7 @@
 
 
 .company__list{
-    margin-top: rem(10);
+    margin-top: rem(30);
     @include mq(md){
         margin-top: rem(50);
     }
