@@ -34,7 +34,19 @@
     }
 }
 
+.detail__item--second{
+    padding-top: rem(60);
+    @include mq(md) {
+        padding-top: rem(80);
+    }
+}
 
+.detail__item + .detail__item{
+    margin-top: rem(40);
+    @include mq(md) {
+        margin-top: rem(100);
+    }
+}
 
 
 
