@@ -190,6 +190,7 @@
     font-weight: $bold;
     width: 100%;
     padding: rem(24) 0;
+    border-radius: rem(4);
     z-index: 1;
     transition: 0.4s;
     overflow: hidden;
@@ -210,37 +211,6 @@
 }
 
 
-// .company-card__button::before {
-//     content: "";
-//     width: 100%;
-//     height: 100%;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     z-index: -1;
-//     background-color: #fff;
-//     transform-origin: 100% 50%;
-//     transform: scaleX(0);
-//     transition: transform ease 0.4s;
-// }
-
-// .company-card__button::after{
-//     border-radius: rem(0);
-//     transition: all 0.4s ease-in-out;
-// }
-
-// .company-card__button:hover span {
-//     color: $green;
-// }   
-
-// .company-card__button:hover {
-//     border: solid 1px $green ;
-// }
-
-// .company-card__button:hover::before {
-//     transform-origin: 0% 50%;
-//     transform: scale(1, 1);
-// }
 
 .company-card__button a {
     text-decoration: none;
@@ -279,10 +249,3 @@
 .company-card__button--blue span::after {
 	background-image: url(../images/common/arrow-blue.png);
 }
-
-// .company-card__button:hover span::after {
-//     background-image: url(../images/common/company-arrow-red.png);
-// }
-
-
-

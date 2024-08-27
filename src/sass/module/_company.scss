@@ -2,6 +2,10 @@
 
 .company{
     background-color: #D7EFF7;
+    padding: rem(40) 0 rem(80);
+    @include mq(md) {
+        padding: rem(80) 0;
+    }
 }
 
 .company__inner{
@@ -38,7 +42,7 @@
 
 
 .company__list{
-    margin-top: rem(20);
+    margin-top: rem(10);
     @include mq(md){
         margin-top: rem(50);
     }
