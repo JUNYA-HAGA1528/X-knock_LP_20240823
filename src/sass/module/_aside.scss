@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.aside__img a{
+    transition: 0.5s;
+}
+
+.aside__img a:hover{
+    opacity: 0.5;
+}

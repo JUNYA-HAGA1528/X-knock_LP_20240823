@@ -64,6 +64,11 @@
 
 .reason__shapes {
     position: relative;
+    background-image: url('../images/common/reason-bg2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     @include mq(md) {
         background-image: url('../images/common/reason-bg2.png');
         background-position: calc(50% + 10px) top;
@@ -77,20 +82,6 @@
 }
 
 
-.reason__bgc{
-    background: linear-gradient(
-    to top, 
-    #8CC63F 0%, 
-    #A3CD38 14%, 
-    #BBD532 32%, 
-    #CBDB2E 52%, 
-    #D5DE2B 73%, 
-    #D9E02B 100%
-    );
-    @include mq(md) {
-        background: none;
-    }
-}
 
 .reason__shapes-inner{
     max-width: $max-width;
@@ -105,6 +96,10 @@
 .reason__shapes-img{
     position: relative;
     z-index: 3;
+    margin-top: rem(300);
+    @include mq(md) {
+        margin-top: rem(0);
+    }
 }
 
 .reason__shapes-bg{
