@@ -86,7 +86,7 @@
 .reason__shapes-inner{
     max-width: $max-width;
     margin:auto;
-    padding: rem(53) rem(25) rem(79);
+    padding: rem(53) rem(25) rem(80);
     @include mq(md) {
         max-width: rem(1230);
         padding: rem(250) rem(25) rem(169);
@@ -96,7 +96,7 @@
 .reason__shapes-img{
     position: relative;
     z-index: 3;
-    margin-top: rem(300);
+    margin-top: rem(120);
     @include mq(md) {
         margin-top: rem(0);
     }

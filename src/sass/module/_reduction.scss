@@ -4,7 +4,7 @@
     background-image: url('../images/common/reduction-bg-sp.png');
     background-position: calc(50% - 8px) bottom; /* 左に10px、下に固定 */
     background-repeat: no-repeat;
-    background-size: rem(440) rem(1600);
+    background-size: rem(440) rem(1635);
     text-align: center;
     background-color: #D7EFF7;
     padding: rem(79) 0 rem(175);
@@ -12,7 +12,7 @@
         background-image: url('../images/common/reduction-bg.png');
         background-position: calc(50% - 48px) bottom; /* 左に10px、下に固定 */
         background-repeat: no-repeat;
-        background-size: rem(1537) rem(1338);
+        background-size: rem(1537) rem(1530);
         padding: rem(170) 0 rem(90);
     }
 }
@@ -90,8 +90,9 @@
     height: rem(310);
     margin:rem(8) auto auto auto;
     @include mq(md) {
-        width: rem(531);
-        height: rem(486);
+        width: rem(835);
+        height: rem(778);
+        margin:rem(-46) auto auto auto;
     }
 }
 
@@ -99,8 +100,9 @@
     position: relative;
     display: inline-block;
     margin: rem(20) rem(25) 0 rem(25);
+    z-index: 1000;
     @include mq(md) {
-        margin: rem(33) 0 0 0;
+        margin: rem(-50) 0 0 0;
     }
 }
 
@@ -141,9 +143,10 @@
 
 
 .reduction__img-point{
+    margin:rem(34) auto auto auto;
     @include mq(md) {
         max-width: rem(1324);
-        margin: auto;
+        margin:rem(40) auto auto auto;
         padding: 0 rem(25);
     }
 }

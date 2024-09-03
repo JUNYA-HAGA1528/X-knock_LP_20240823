@@ -30,6 +30,13 @@
     text-transform: uppercase; /* すべての文字を大文字にする */
 }
 
+.section-title__en--topic{
+    font-size: rem(16);
+    @include mq(md) {
+        font-size: rem(25.6);
+    }
+}
+
 .section-title__en--font{
     text-transform: capitalize;
 }
