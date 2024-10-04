@@ -42,7 +42,6 @@
     color: $green; /* 文字色を白に */
     width: rem(123);
     vertical-align: center; /* 上部揃え */
-    letter-spacing: 0.18em;
     padding: rem(10) 0 rem(10) rem(10);
     font-weight: $semiBold;
     font-size: rem(14);
@@ -88,10 +87,12 @@
 .detail-overview__frame-sp {
     position: relative;
     text-align: center; /* 中央揃え */
+    
 }
 
 .detail-overview__frame-sp img {
     width: 100%; /* 画像をフレームの幅に合わせる */
+    height: rem(372);
     display: block;
     margin: 0 auto;
 }
@@ -102,7 +103,6 @@
     left: 50%; /* 水平方向の中央揃え */
     transform: translate(-50%, -50%); /* 中央に配置 */
     width: 100%; /* リストの幅を100%に設定 */
-    padding: 0 rem(20); /* 内側にパディングを追加 */
     box-sizing: border-box; /* パディングが幅に影響しないように */
 }
 
@@ -118,9 +118,13 @@
 
 .detail-overview__sp-item dt {
     color: $black;
-    margin-top: rem(10);
+    margin-top: rem(4);
     font-size: rem(16);
     font-weight: $semiBold;
+}
+
+.detail-overview__sp-item--font dt {
+    font-size: rem(14);
 }
 
 .detail-overview__sp-item a {
