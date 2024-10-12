@@ -1,0 +1,75 @@
+@use "global" as *;
+
+.header{
+    background-color:#E2F2F8 ;
+    position: fixed;
+    width: 100%;
+    z-index: 5000;
+    top: 0px;
+    @include mq(md) {
+        z-index: 5005;
+    }
+}
+
+.js-header {
+    background-color: rgba(226, 242, 248, 0.9); /* 透明度30%の背景色 */
+    transition: background-color 0.3s ease; /* スムーズに色を変化させる */
+}
+
+
+.header__inner{
+    padding: 0 rem(13);
+    height: rem(60);
+    @include mq(md) {
+        padding: 0 4.3%;
+        height: rem(102);
+    }
+}
+
+.header__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+}
+
+.header__logo-link{
+    display: flex;
+    align-items: center;
+    gap: 0 rem(15);
+    height: inherit;
+}
+
+.header__icon{
+    width: rem(42);
+    height: rem(42);
+    @include mq(md) {
+        width: rem(70);
+        height: rem(70);
+    }
+}
+
+.header__title {
+    color: $blue;
+    font-size: rem(19.22);
+    font-weight: $black;
+    text-shadow: 
+        1px 1px 0 $white,
+        -1px -1px 0 $white,
+        1px -1px 0 $white,
+        -1px 1px 0 $white;
+        @include mq(md) {
+            line-height: 1.25;
+            font-size: rem(32);
+        }
+}
+
+
+.header__logo-link{
+    cursor: pointer;
+    transition: 0.5;
+}
+
+.header__logo-link:hover{
+    opacity: 0.5;
+}
